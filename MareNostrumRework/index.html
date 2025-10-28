@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MareNostrum 5 ACC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between p-4">
+            <h1 class="text-2xl md:text-3xl font-bold text-indigo-900 tracking-tight mb-2 md:mb-0">
+                <a href="https://www.top500.org/system/180238/" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-indigo-600 transition-colors">
+                    MareNostrum 5 ACC
+                </a>
+            </h1>
+            <nav class="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6 text-sm text-gray-600">
+                <a href="#especificacoes" class="hover:text-indigo-600">Especificações</a>
+                <a href="#desempenho" class="hover:text-indigo-600">Desempenho</a>
+                <a href="#sobre" class="hover:text-indigo-600">Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CARROSSEL -->
+    <section class="relative w-full h-[50vh] md:h-[70vh] overflow-hidden">
+        <div id="carrosselImagens" class="absolute inset-0">
+            <img src="mare1.jpg" alt="Foto 1"
+                class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700">
+            <img src="mare2.jpg" alt="Foto 2"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700">
+            <img src="mare3.jpg" alt="Foto 3"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700">
+            <img src="mare4.jpg" alt="Foto 4"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700">
+            <img src="mare6.jpg" alt="Foto 5"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700">
+        </div>
+
+        <div class="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-white text-center p-4">
+            <h2 class="text-2xl md:text-4xl font-bold mb-2">Supercomputador Europeu</h2>
+            <p class="text-sm md:text-lg text-gray-200 max-w-xl">Potência pré-exaescala para impulsionar a pesquisa
+                científica e tecnológica da União Europeia.</p>
+        </div>
+
+        <button id="prevBtn"
+            class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/60 text-white backdrop-blur-sm p-2 md:p-3 rounded-full transition">
+            <</button>
+        <button id="nextBtn"
+            class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/60 text-white backdrop-blur-sm p-2 md:p-3 rounded-full transition">></button>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-4 md:px-8 py-12 space-y-16">
+
+        <!-- ESPECIFICAÇÕES -->
+        <section id="especificacoes">
+            <h2 class="text-2xl md:text-3xl font-semibold text-indigo-900 mb-6 border-l-4 border-indigo-600 pl-3">Especificações Técnicas</h2>
+            <div class="overflow-x-auto bg-white rounded-xl shadow-lg">
+                <table class="min-w-full text-left border-collapse text-sm md:text-base">
+                    <thead class="bg-indigo-900 text-white">
+                        <tr>
+                            <th class="p-3 md:p-4">Fabricante</th>
+                            <th class="p-3 md:p-4">Núcleos</th>
+                            <th class="p-3 md:p-4">Processador</th>
+                            <th class="p-3 md:p-4">Rede</th>
+                            <th class="p-3 md:p-4">Ano</th>
+                            <th class="p-3 md:p-4">Sistema Operacional</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b hover:bg-gray-50">
+                            <td class="p-3 md:p-4">EVIDEN</td>
+                            <td class="p-3 md:p-4">680.960</td>
+                            <td class="p-3 md:p-4">Xeon Platinum 8460Y+ 40C 2GHz</td>
+                            <td class="p-3 md:p-4">Infiniband NDR200</td>
+                            <td class="p-3 md:p-4">2023</td>
+                            <td class="p-3 md:p-4">RedHat 9.1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- DESEMPENHO -->
+        <section id="desempenho">
+            <h2 class="text-2xl md:text-3xl font-semibold text-indigo-900 mb-6 border-l-4 border-indigo-600 pl-3">Desempenho e Consumo</h2>
+            <div class="overflow-x-auto bg-white rounded-xl shadow-lg">
+                <table class="min-w-full text-left border-collapse text-sm md:text-base">
+                    <thead class="bg-indigo-900 text-white">
+                        <tr>
+                            <th class="p-3 md:p-4">Rmax</th>
+                            <th class="p-3 md:p-4">Rpico</th>
+                            <th class="p-3 md:p-4">Núcleos Máx.</th>
+                            <th class="p-3 md:p-4">Consumo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b hover:bg-gray-50">
+                            <td class="p-3 md:p-4">138,20 PFlops/s</td>
+                            <td class="p-3 md:p-4">265,57 PFlops/s</td>
+                            <td class="p-3 md:p-4">5.677.056</td>
+                            <td class="p-3 md:p-4">2.560,00 kW</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section id="sobre" class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+            <article class="md:col-span-2 bg-white rounded-xl shadow-lg p-6 md:p-8 space-y-4">
+                <h2 class="text-2xl md:text-3xl font-semibold text-indigo-900">O que é o MareNostrum 5?</h2>
+                <p class="text-gray-700">O <strong>MareNostrum 5</strong> é um supercomputador EuroHPC pré-exaescala
+                    hospedado no BSC-CNS (Barcelona Super Computer Center). O sistema combina as arquiteturas Bull
+                    Sequana XH3000 e Lenovo ThinkSystem, atingindo um poder computacional de pico de 314 PFlops.</p>
+                <p class="text-gray-700">Ele é essencial para impulsionar pesquisas em IA, clima, ciências da Terra e desenvolvimento de novos
+                    materiais em toda a União Europeia.</p>
+                <p class="text-gray-700">O projeto custou cerca de <strong>202 milhões de euros</strong>, sendo 50% financiado pela Comissão
+                    Europeia e o restante por Espanha, Portugal e Turquia.</p>
+
+                <ul class="list-disc pl-5 md:pl-6 text-gray-700 space-y-2">
+                    <li>50% do tempo de uso é reservado a cientistas dos países participantes.</li>
+                    <li>Os outros 50% são abertos a toda a União Europeia via EuroHPC.</li>
+                    <li>Seu desempenho equivale a mais de 380 mil laptops modernos trabalhando juntos.</li>
+                    <li>Em uma hora, realiza o que um laptop faria em 46 anos.</li>
+                    <li>Ocupa 800 m² e é 23 vezes mais potente que o MareNostrum 4.</li>
+                </ul>
+            </article>
+
+            <aside class="bg-white rounded-xl shadow-lg p-4 md:p-6">
+                <h3 class="text-xl font-semibold text-indigo-700 mb-4 text-center">Galeria</h3>
+                <div class="grid grid-cols-2 md:grid-cols-2 gap-3">
+                    <img src="mare1.jpg" alt="Foto 1" class="rounded-lg object-cover w-full h-24 md:h-28">
+                    <img src="mare2.jpg" alt="Foto 2" class="rounded-lg object-cover w-full h-24 md:h-28">
+                    <img src="mare3.jpg" alt="Foto 3" class="rounded-lg object-cover w-full h-24 md:h-28">
+                    <img src="mare4.jpg" alt="Foto 4" class="rounded-lg object-cover w-full h-24 md:h-28">
+                    <img src="mare6.jpg" alt="Foto 5" class="rounded-lg object-cover w-full h-24 md:h-28 md:col-span-2">
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="bg-indigo-900 text-white text-center py-6">
+        <p class="text-sm">&copy; 2025 MareNostrum 5 ACC — Rework </p>
+    </footer>
+
+    <!-- CARROSSEL -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const imgs = document.querySelectorAll("#carrosselImagens img");
+            const prev = document.getElementById("prevBtn");
+            const next = document.getElementById("nextBtn");
+            let index = 0;
+
+            function show(i) {
+                imgs.forEach((img, j) => img.style.opacity = j === i ? "1" : "0");
+            }
+
+            prev.addEventListener("click", () => {
+                index = (index - 1 + imgs.length) % imgs.length;
+                show(index);
+            });
+
+            next.addEventListener("click", () => {
+                index = (index + 1) % imgs.length;
+                show(index);
+            });
+
+            setInterval(() => {
+                index = (index + 1) % imgs.length;
+                show(index);
+            }, 6000);
+        });
+    </script>
+</body>
+
+</html>
